@@ -1,0 +1,134 @@
+@keyframes alertGlow {
+    from {
+        color: #bbb
+    }
+
+    50% {
+        color: #140c46
+    }
+
+    to {
+        color: #bbb
+    }
+}
+
+@-webkit-keyframes alertGlow {
+    from {
+        color: #bbb
+    }
+
+    50% {
+        color: #140c46
+    }
+
+    to {
+        color: #bbb
+    }
+}
+
+@-moz-keyframes alertGlow {
+    from {
+        color: #bbb
+    }
+
+    50% {
+        color: #140c46
+    }
+
+    to {
+        color: #bbb
+    }
+}
+
+@-o-keyframes alertGlow {
+    from {
+        color: #bbb
+    }
+
+    50% {
+        color: #140c46
+    }
+
+    to {
+        color: #bbb
+    }
+}
+
+.alert-glow {
+    animation: alertGlow 2.5s linear 2s infinite alternate;
+    -webkit-animation: alertGlow 2.5s linear 2s infinite alternate;
+    -moz-animation: alertGlow 2.5s linear 2s infinite alternate;
+    -o-animation: alertGlow 2.5s linear 2s infinite alternate
+}
+
+a:not(.btn),.tabs .tab a,.card .collection-item p,.collection a.collection-item,.navbar-fixed nav .brand-logo,.dropdown-content li>a,.dropdown-content li>span,.notification-content,.message-content,.dropdown-content li>a,.dropdown-content li>span,textarea.materialize-textarea:focus:not([readonly])+label,input:focus:not([readonly])+label,.c100:hover>span,.individual-scores-container .percentile p {
+    color: #130c3e
+}
+
+.tabs .tab a:hover {
+    color: #140c46
+}
+
+.tabs .indicator,.message-from-user {
+    background-color: #140c46
+}
+
+.pagination li a {
+    color: #ffffff
+}
+
+.navbar-fixed nav {
+    border-bottom: 5px solid #ffffff
+}
+
+nav,.btn,input[type=range]+.thumb,[type=radio]:checked+label:after,span.new.badge,.pagination li.active,.btn-floating,.btn-floating:hover,[type=checkbox].filled-in:checked+label:after,.progress .determinate,.slider .indicators .indicator-item.active,.return-message {
+    background-color: #3390e4
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #564d8e
+}
+
+[type=radio]:checked+label:after,[type=checkbox].filled-in:checked+label:after,.table-of-contents a.active,.table-of-contents a:hover,.c100 .fill,.pie,.c100 .bar {
+    border-color: #ff8243!important
+}
+
+textarea.materialize-textarea:focus:not([readonly]),input:focus:not([readonly]) {
+    border-bottom: 1px solid #ff8243!important;
+    box-shadow: 0 1px 0 #ff8243!important
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label,input:focus:not([readonly])+label {
+    color: #ff8243!important
+}
+
+.btn {
+    background-color: #ff8243!important
+}
+
+[type=checkbox].not-filled-in:checked+label:before,[type=checkbox]:checked+label:before {
+    border-right-color: #140c46;
+    border-bottom-color: #b9b8bd
+}
+
+/*
+     FILE ARCHIVED ON 18:46:18 Dec 01, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:55:22 Feb 04, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 6.256
+  PetaboxLoader3.resolve: 321.095 (3)
+  exclusion.robots.policy: 0.199
+  captures_list: 358.621
+  exclusion.robots: 0.214
+  LoadShardBlock: 334.767 (3)
+  PetaboxLoader3.datanode: 477.835 (5)
+  esindex: 0.014
+  CDXLines.iter: 13.661 (3)
+  load_resource: 523.788
+*/
