@@ -1,16 +1,11 @@
 var defaultThreads = [
     {
         id: 1,
-        title: "Thread 1",
-        author: "Aaron",
+        title: "Opiniões sobre a Blacklist da FBS e updates!",
+        author: "Anonymous",
         date: Date.now(),
-        content: "Thread content",
+        content: "Recentemente, vimos algumas reclamações sobre a blacklist do servidor.. bleh bleh.",
         comments: [
-            {
-                author: "Jack",
-                date: Date.now(),
-                content: "Hey there"
-            },
             {
                 author: "Arthur",
                 date: Date.now(),
@@ -21,15 +16,10 @@ var defaultThreads = [
     {
         id: 2,
         title: "Thread 2",
-        author: "Aaron",
+        author: "Anonymous",
         date: Date.now(),
         content: "Thread content 2",
         comments: [
-            {
-                author: "Jack",
-                date: Date.now(),
-                content: "Hey there"
-            },
             {
                 author: "Arthur",
                 date: Date.now(),
