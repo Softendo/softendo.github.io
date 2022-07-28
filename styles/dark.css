@@ -1,229 +1,207 @@
 body {
-    background: #ffffff;
-    color: #000000;
-    background-image: url(/web/20181205024122im_/http://softendo.000webhostapp.com/images/backgrounds/8.png)!important;
+  background: #222;
+  color: #fff;
+  background-image: url("../bg.png") !important;
 }
 
-.navigation,.modal,.dropdown-content,.card,.tabs,.user-dropdown li.user-section:hover,.card .card-reveal {
-    background-color: #ffffff;
+.navigation, .modal, .dropdown-content, .card, .tabs, .user-dropdown li.user-section:hover, .card .card-reveal {
+  background-color: #333;
 }
 
 .navigation li:hover {
-    background-color: rgba(208, 133, 55, 0.1)
+  background-color: rgba(0,0,0,0.1);
 }
 
 .navigation li.active {
-    background-color: rgba(208, 133, 97, 0.18)
+  background-color: rgba(0,0,0,0.15);
 }
 
 ul#mobile-navigation {
-    background-color: #ffffff
+  background-color: #333;
 }
 
 .border-bottom-1 {
-    border-bottom: 1px solid #1f1f1f!important
+  border-bottom: 1px solid #1f1f1f !important;
 }
 
 .heading {
-    border-bottom: 2px solid #b5abab
+  border-bottom: 2px solid #1f1f1f;
 }
 
 .hover-effect:hover {
-    background-color: #1f1f1f!important
+  background-color: #1f1f1f !important;
 }
 
 .user-dropdown li.user-section:hover {
-    background: #736c6c
+  background: #000;
 }
 
 .collection {
-    border: 1px solid #000;
-    background-color: #333;
-    color: #ffffff
+  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
 }
 
 .collection .collection-item {
-    background: #000;
-    border-color: #000000
+  background: #333;
+  border-color: #1f1f1f;
 }
 
 .collapsible {
-    border-color: #dad1d1
+  border-color: #555;
 }
 
 .collapsible-header {
-    background: #a7a3a3;
-    color: #fff;
-    border-color: #cec6c6
+  background: #333;
+  color: #fff;
+  border-color: #555;
 }
 
-.select-wrapper span.caret,.navbar-fixed nav a {
-    color: #fff
+.select-wrapper span.caret, .navbar-fixed nav a {
+  color: #fff;
 }
 
 nav .input-field label.active i {
-    color: #555!important
+  color: #fff !important;
 }
 
-.input-field input[type=search]:focus {
-    background: #756e6e;
-    color: #fff
+.input-field input[type="search"]:focus {
+  background: #333;
+  color: #fff;
 }
 
-.navbar-fixed nav a,nav .dropdown-content li:not(#view-all-notifications) a {
-    color: #fff
+.navbar-fixed nav a, nav .dropdown-content li:not(#view-all-notifications) a {
+  color: #fff;
 }
 
 .hover-effect {
-    transition: all .5s
+  transition: all 0.5s;
 }
 
 .hover-effect:hover {
-    background-color: #666!important
+  background-color: #666 !important;
 }
 
 .toast {
-    background-color: #aaa!important;
-    color: #fff!important;
-    font-weight: 600
+  background-color: #aaa !important;
+  color: #000 !important;
+  font-weight: 600;
 }
 
-.section .card,p.text,.notification-date,.message-date,.dropdown-title,.user-username,.optgroup span,.navigation .dropdown-content.user-dropdown li>a,.card .card-reveal .card-title {
-    color: #555!important
+.section .card, p.text, .notification-date, .message-date, .dropdown-title, .user-username, .optgroup span, .navigation .dropdown-content.user-dropdown li>a, .card .card-reveal .card-title {
+  color: #fff !important;
 }
 
 footer.grey.page-footer {
-    background-color: #eaeaea!important;
+  background-color: #333 !important;
 }
 
 footer .footer-copyright {
-    background-color: #eaeaea!important
+  background-color: #222 !important;
 }
 
 .level-code .level-code-textarea:hover {
-    background-color: #eaeaea
+  background-color: #555;
 }
 
 .collection a.collection-item:hover {
-    background-color: #555!important
+  background-color: #555 !important;
 }
 
 table.highlight tbody tr:hover {
-    background-color: #555
+  background-color: #555;
 }
 
 p.subtitle {
-    color: #999!important
+  color: #999 !important;
 }
 
 ul.dropdown-content li:hover {
-    background-color: #444
+  background-color: #444;
 }
 
-.dropdown-content li.active,.dropdown-content li.selected,.dropdown-content li.active.selected {
-    background-color: #3390e4
+.dropdown-content li.active, .dropdown-content li.selected, .dropdown-content li.active.selected {
+  background-color: #444;
 }
 
 .divider {
-    background-color: #000
+  background-color: #000;
 }
 
 .comment-info {
-    border-top: 1px solid #666
+  border-top: 1px solid #666;
 }
 
 .comment-info {
-    border-top: 1px solid #1f1f1f
+  border-top: 1px solid #1f1f1f;
 }
 
-.user-email,.user-credits,.user-rank,.user-class {
-    color: #aaa
+.user-email, .user-credits, .user-rank, .user-class {
+  color: #aaa;
 }
 
 .card-blocks .card .card-content a.btn {
-    color: #000!important
+  color: #000 !important;
 }
 
-.slider .indicators .indicator-item,.progress {
-    background-color: #52b6ce
+.slider .indicators .indicator-item, .progress {
+  background-color: #666;
 }
 
 .message-from-sender {
-    background-color: #555
+  background-color: #555;
 }
 
 .material-tooltip .backdrop {
-    background-color: #aaa
+  background-color: #aaa;
 }
 
 .material-tooltip {
-    color: #000;
-    font-weight: 700
+  color: #000;
+  font-weight: bold;
 }
 
 .menu-bar {
-    background-color: #444;
-    border-right: 2px solid #555
+  background-color: #444;
+  border-right: 2px solid #555;
 }
 
 .menu-bar-list li.active .menu-bar-icon {
-    background-color: #545454
+  background-color: #545454;
 }
 
 .separator {
-    background-color: #79a3e4
+  background-color: #444;
 }
 
 .leaderboard-overview-card .individual-scores-container {
-    border-left: 1px solid #444
+  border-left: 1px solid #444;
 }
 
 .xp-score-container .percentile {
-    background-color: #999
+  background-color: #999;
 }
 
 .individual-scores-container .percentile {
-    border: 6px solid #999
+  border: 6px solid #999;
 }
 
 .xp-score-container .percentile p {
-    color: #333
+  color: #333;
 }
 
 .toast a {
-    color: #000!important
+  color: #000 !important;
 }
 
-::-webkit-scrollbar,*::-webkit-scrollbar {
-    width: 15px
+::-webkit-scrollbar, *::-webkit-scrollbar {
+  width: 15px;
 }
 
-::-webkit-scrollbar-track,*::-webkit-scrollbar-track {
-    background: #fffdfd
+::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
+  background: #222;
 }
 
-::-webkit-scrollbar-thumb,*::-webkit-scrollbar-thumb {
-    background: #499dfd
+::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+  background: #444;
 }
-
-/*
-     FILE ARCHIVED ON 02:41:22 Dec 05, 2018 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 20:55:26 Feb 04, 2020.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  PetaboxLoader3.resolve: 507.114 (2)
-  esindex: 0.007
-  load_resource: 794.035
-  CDXLines.iter: 14.498 (3)
-  RedisCDXSource: 1.825
-  captures_list: 97.851
-  PetaboxLoader3.datanode: 228.51 (5)
-  LoadShardBlock: 78.961 (3)
-  exclusion.robots: 0.137
-  exclusion.robots.policy: 0.129
-*/
