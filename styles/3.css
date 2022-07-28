@@ -78,7 +78,7 @@ a:not(.btn),.tabs .tab a,.card .collection-item p,.collection a.collection-item,
 }
 
 .navbar-fixed nav {
-    border-bottom: 5px solid #ffffff
+    border-bottom: 5px solid #3a3939
 }
 
 nav,.btn,input[type=range]+.thumb,[type=radio]:checked+label:after,span.new.badge,.pagination li.active,.btn-floating,.btn-floating:hover,[type=checkbox].filled-in:checked+label:after,.progress .determinate,.slider .indicators .indicator-item.active,.return-message {
