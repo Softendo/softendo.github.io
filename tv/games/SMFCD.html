@@ -25,19 +25,16 @@ body {
 <div align="center">
 <div id="smfcd"><ruffle-player></ruffle-player></div>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<script type="module">
-				window.RufflePlayer = window.RufflePlayer || {};
-				window.addEventListener("load", (event) => {
-					const ruffle = window.RufflePlayer.newest();
-					const player = ruffle.createPlayer();
-					const container = document.getElementById("smfcd");
-					container.appendChild(player);
-					player.load({
-						url: "smfcd.swf",
-						autoplay: "on",
-						unmuteOverlay: "hidden",
-						contextMenu: false
-					});
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("smfcd.swf");
+    });
+</script>
 	
 </div>
 <table style="color:Tomato;" cellspacing="5" cellpadding="10" border="1" align="center">
