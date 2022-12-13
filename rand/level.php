@@ -173,42 +173,7 @@
         
       </main><!-- End main -->
     
-    <!-- Footer -->
-    <!-- Footer -->
-      <footer class="page-footer grey darken-2">
-        <div class="container">
-          <div class="row">
-            <div class="col l7 s12">
-              <h5 class="white-text">About Level Palace</h5>
-              <p class="grey-text text-lighten-4">Level Palace allows people to play, share, and rate user-generated content of popular games. Level Palace is not affiliated with any of the games shown on this site.</p>
-            </div><!-- End column -->
-            <div class="col l2 m3 s6 offset-l1">
-              <h5 class="white-text">Quick Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3 modal-trigger" href="#add-level">Add a Level</a></li>
-                <li><a class="grey-text text-lighten-3 modal-trigger" href="#publish-level">Publish a Level</a></li>
-                <li><a class="grey-text text-lighten-3 modal-trigger" href="#change-theme">Change Theme</a></li>
-              </ul><!-- End link list -->
-            </div><!-- End column -->
-            <div class="col l2 m3 s6">
-              <h5 class="white-text">Support</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="rules">Site Rules</a></li>
-                <li><a class="grey-text text-lighten-3" href="faq">FAQ</a></li>
-                <li><a class="grey-text text-lighten-3" href="contact">Contact</a></li>
-              </ul><!-- End link list -->
-            </div><!-- End column -->
-          </div><!-- End row -->
-        </div><!-- End container -->
-        <div class="footer-copyright">
-          <div class="container">
-            © 2018 Level Palace
-            <a class="grey-text text-lighten-4 right margin-left-10" href="privacy">Privacy</a>
-            <a class="grey-text text-lighten-4 right margin-left-10 margin-right-10" href="terms">Terms of Use</a>
-            <a class="grey-text text-lighten-4 right margin-right-10" href="help">Help</a>
-          </div><!-- End container -->
-        </div><!-- End footer copyright -->
-      </footer><!-- End footer -->
+
     </div><!-- End site wrapper -->
   
     <!-- Materialize -->

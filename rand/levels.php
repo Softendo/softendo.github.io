@@ -4,7 +4,7 @@
     <meta name="title" content="Level Palace | Play and share fun levels of Super Mario Construct!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="propeller" content="e711179343918ea4ad434ff8675d8543">
-    <title>Palace</title>
+    <title>AnonPalace | Levels</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/logos/icon.png" type="image/x-icon">
     <!-- Google Icon Font -->
@@ -49,14 +49,14 @@
           <!-- End user dropdown -->
           <nav class="navigation">
             <div class="nav-wrapper">
-              <a href="index" class="brand-logo center"><img src="images/logos/3.png" class="logo-image" alt="level palace logo"></a>
+              <a href="index.php" class="brand-logo center"><img src="images/logos/3.png" class="logo-image" alt="level palace logo"></a>
               <a href="#" data-activates="mobile-navigation" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul class="left hide-on-med-and-down">
-                <li><a href="index" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="Home" data-tooltip-id="27eab2ef-6331-848a-4aae-9ddf94d650d9"><i class="material-icons">home</i></a></li>
+                <li><a href="index.php" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="Home" data-tooltip-id="27eab2ef-6331-848a-4aae-9ddf94d650d9"><i class="material-icons">home</i></a></li>
                                 <li><a href="game.php?id=49" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="Play" data-tooltip-id="750ebfdf-bfe5-3d16-bbfa-95b8a52f4047"><i class="material-icons">videogame_asset</i></a></li>
                 
                                       
-                <li class="active"><a href="levels" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="Levels" data-tooltip-id="ff3893bd-5319-86c6-f998-340075b975d7"><i class="material-icons">view_list</i></a></li>
+                <li class="active"><a href="levels.php" class="tooltipped" data-position="bottom" data-delay="100" data-tooltip="Levels" data-tooltip-id="ff3893bd-5319-86c6-f998-340075b975d7"><i class="material-icons">view_list</i></a></li>
                 <li><a class="dropdown-button" data-activates="dropdown"><span><i class="material-icons">view_headline</i><i class="material-icons right">arrow_drop_down</i></span></a><ul id="dropdown" class="dropdown-content dropdown">
             <li class="options-section">
                 </li><li><a href="members"><i class="material-icons">people</i>Members</a></li>
@@ -66,12 +66,11 @@
           </ul></li>
               </ul><!-- End left navbar links -->
               <ul class="right hide-on-med-and-down">
-                <li><a href="notifications.php" class="notifications-button"><i class="material-icons">notifications</i></a></li>
                                 <li><a class="dropdown-button username-dropdown-link" data-activates="user-dropdown"><span class="truncate">Anonymous</span><i class="material-icons right">arrow_drop_down</i></a><ul id="user-dropdown" class="dropdown-content user-dropdown">
              <li class="user-section">
               <div class="row no-margin">
                 <div class="user-aside col s4">
-                  <div style="background-image: url(unnamed.png);" class="user-icon user-icon-round"></div>
+                   <div style="background-image: url(images/user.png);" class="user-icon user-icon-round"></div>
                 </div><!-- End user aside -->
                 <div class="user-content col s8">
                   <p class="user-username">Anonymous</p>
@@ -79,42 +78,23 @@
               </div><!-- End row -->
             </li><!-- End user section -->
             <li class="divider"></li>
-            <li><a href="account?user_id=7561"><i class="material-icons">lock</i>Account</a></li>
-            <li><a href="profile?user_id=7561"><i class="material-icons">create</i>Profile</a></li>
-            <li class="active"><a href="levels?creator=DragooniaShade"><i class="material-icons">view_list</i>Levels</a></li>
-            <li class="divider"></li>
-              <li><a href="#settings" class="modal-trigger"><i class="material-icons">settings</i>Settings</a></li>
-              <li><a href="signout"><i class="material-icons">power_settings_new</i>Sign Out</a></li>
           </ul></li>
               </ul><!-- End right navbar links -->
               <ul class="side-nav" id="mobile-navigation" style="left: -250px;">
-                                <li><a href="profile?user_id=7561"><i class="material-icons">edit</i>Profile</a></li>
-                <li><a href="notifications"><i class="material-icons">notifications</i>Notifications</a></li>
-                <li class="divider"></li>
-                <li><a href="index"><i class="material-icons">home</i>Home</a></li>
+                <li><a href="index.php"><i class="material-icons">home</i>Home</a></li>
                                 <li><a href="game.php?id=49"><i class="material-icons">videogame_asset</i>Play</a></li>
                 <li><a href="members"><i class="material-icons">people</i>Members</a></li>
                 <li class="active"><a href="levels"><i class="material-icons">view_list</i>Levels</a></li>
                 <li><a href="cbgs"><i class="material-icons">collections</i>CBGs</a></li>
                 <li><a href="contest"><i class="material-icons">games</i>Contest</a></li>
 <!--                <li><a href="leaderboard"><i class="material-icons">insert_chart</i>Leaderboards</a></li>-->
-                <li class="divider"></li>
-                <li><a href="#settings" class="modal-trigger"><i class="material-icons">settings</i>Settings</a></li>
-                <li><a href="signout"><i class="material-icons">power_settings_new</i>Sign Out</a></li>
               </ul><!-- End mobile navbar links -->
             </div><!-- End nav-wrapper -->
           </nav><!-- End navbar -->
         </div><!-- End navbar-fixed container -->
         <!-- Modals -->
         <div class="modals">
-          <div id="changelog" class="modal">
-            <div class="modal-content">
-              <h4>Site Update</h4>
-<p>October 9th, 2018</p>
-<ul><li><strong>Performance Upgrades: </strong>Requests for data have been optimized to ensure maximum performance when handling tasks. And fewer overall requests means less stress on the servers. This equates to faster load times for you. And we'll be continuing to improve speeds over the next few weeks.</li><li><strong> Introducing Private Comments: </strong>The private messages system and comments system have been combined into one. Simply check "Make this Private" before adding a comment.</li><li><strong>News: </strong> News posts are now visible on the front page.<br><br><strong>COMING SOON:</strong></li><li>Performance improvements on levels, level, and profile pages.</li><li>Notification Spam Prevention: Notifications automatically cleared after 2 weeks.</li><li>Pinned Comments</li><li>Design and layout enhancements</li> 
-</ul>
-            </div><!-- End modal content -->
-          </div><!-- End playlist options modal -->
+          
         <div id="add-level" class="modal bottom-sheet "><div class="modal-content"></div></div><div id="edit-level" class="modal bottom-sheet"><div class="modal-content"></div></div><div id="delete-level" class="modal bottom-sheet"><div class="modal-content"></div></div><div id="playlist-options" class="modal bottom-sheet"><div class="modal-content"></div></div><div id="publish-level" class="modal bottom-sheet "><div class="modal-content"></div></div><div id="change-theme" class="modal bottom-sheet modal-mini"><div class="modal-content"></div></div><div id="change-theme-mobile" class="modal bottom-sheet "><div class="modal-content"></div></div><div id="settings" class="modal  "><div class="modal-content"></div></div><div id="share-level" class="modal "><div class="modal-content"></div></div><div id="edit-images" class="modal bottom-sheet"><div class="modal-content"></div></div><div id="add-news" class="modal  "><div class="modal-content"></div></div></div><!-- End modals -->
                 
         <div class="fixed-action-btn hide-on-small-only" style="bottom: 25px; left: 25px; width: 55px;">
@@ -128,9 +108,7 @@
             <i class="large material-icons">chevron_left</i>
           </a>
           <ul>
-            <li class="hide-on-med-and-down"><a href="#change-theme" class="btn-floating red modal-trigger"><i class="material-icons">format_paint</i></a></li>
-            <li class="hide-on-large-only"><a href="#change-theme-mobile" class="btn-floating red modal-trigger"><i class="material-icons">format_paint</i></a></li>
-            <li><a href="#publish-level" class="btn-floating green modal-trigger"><i class="material-icons">publish</i></a></li>
+            <li><a href="publish-level.php" class="btn-floating green"><i class="material-icons">publish</i></a></li>
             <li><a href="#add-level" class="btn-floating blue modal-trigger"><i class="material-icons">create</i></a></li>
           </ul><!-- End ul -->
         </div><!-- End fixed action button -->
@@ -340,42 +318,7 @@
         </div><!-- End row -->
       </main><!-- End main -->
     
-    <!-- Footer -->
-    <!-- Footer -->
-      <footer class="page-footer grey darken-2">
-        <div class="container">
-          <div class="row">
-            <div class="col l7 s12">
-              <h5 class="white-text">About Level Palace</h5>
-              <p class="grey-text text-lighten-4">Level Palace allows people to play, share, and rate user-generated content of popular games. Level Palace is not affiliated with any of the games shown on this site.</p>
-            </div><!-- End column -->
-            <div class="col l2 m3 s6 offset-l1">
-              <h5 class="white-text">Quick Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3 modal-trigger" href="#add-level">Add a Level</a></li>
-                <li><a class="grey-text text-lighten-3 modal-trigger" href="#publish-level">Publish a Level</a></li>
-                <li><a class="grey-text text-lighten-3 modal-trigger" href="#change-theme">Change Theme</a></li>
-              </ul><!-- End link list -->
-            </div><!-- End column -->
-            <div class="col l2 m3 s6">
-              <h5 class="white-text">Support</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="rules">Site Rules</a></li>
-                <li><a class="grey-text text-lighten-3" href="faq">FAQ</a></li>
-                <li><a class="grey-text text-lighten-3" href="contact">Contact</a></li>
-              </ul><!-- End link list -->
-            </div><!-- End column -->
-          </div><!-- End row -->
-        </div><!-- End container -->
-        <div class="footer-copyright">
-          <div class="container">
-            © 2018 Level Palace
-            <a class="grey-text text-lighten-4 right margin-left-10" href="privacy">Privacy</a>
-            <a class="grey-text text-lighten-4 right margin-left-10 margin-right-10" href="terms">Terms of Use</a>
-            <a class="grey-text text-lighten-4 right margin-right-10" href="help">Help</a>
-          </div><!-- End container -->
-        </div><!-- End footer copyright -->
-      </footer><!-- End footer -->
+   
     </div><!-- End site wrapper -->
   
     <!-- Materialize -->
@@ -410,4 +353,4 @@
     </script>
     
   
-<div class="material-tooltip" id="6fb87c5f-55c1-bed9-f9c8-22156c6d93d0"><span>Home</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="f193aa54-6d55-634d-c30c-24e25e33337d"><span>Play</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="41b2a001-2411-75e8-ec41-6f063b8c46bc"><span>Levels</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="4532a81f-5859-8a75-05c7-35f4aa80a16e"><span>Undo Delete</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div class="material-tooltip" id="27eab2ef-6331-848a-4aae-9ddf94d650d9"><span>Home</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="750ebfdf-bfe5-3d16-bbfa-95b8a52f4047" style="display: none; left: 416.833px; top: 70px; margin-top: 0px; margin-left: 0px; opacity: 0;"><span>Play</span><div class="backdrop" style="top: 0px; left: 0px; margin-left: 15.5px; display: none; opacity: 0; transform: scale(1);"></div></div><div class="material-tooltip" id="ff3893bd-5319-86c6-f998-340075b975d7"><span>Levels</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div><div class="material-tooltip" id="94e46000-b9b6-ccb0-a9f7-428a67391762"><span>Undo Delete</span><div class="backdrop" style="top: 0px; left: 0px;"></div></div></body></html>
+</div></body></html>

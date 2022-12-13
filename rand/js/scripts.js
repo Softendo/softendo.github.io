@@ -175,10 +175,6 @@ $(document).ready(function() {
   INITIATE MATERIALIZE 
   *******************/
   
-  // Linkify
-  $(".level-description").linkify({
-    target: "_blank"
-  });
   
   // Parallax
   $(".parallax").parallax();
