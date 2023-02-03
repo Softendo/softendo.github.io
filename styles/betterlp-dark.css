@@ -1,11 +1,6 @@
 body {
-  background: rgba(0,0,0,0.29);
-  color: #fff;
-  background-image: url("https://www.levelpalace.com/files/47c410fb547c084985bf1cc5c53f775f.jpg") !important;
-}
-
-.navigation, .modal, .dropdown-content, .card, .tabs, .user-dropdown li.user-section:hover, .card .card-reveal {
-  background-color: rgba(0,0,0,0.40);
+  background: #222;
+  color: #cfc9bf;
 }
 
 .navigation li:hover {
@@ -13,11 +8,11 @@ body {
 }
 
 .navigation li.active {
-  background-color: rgba(0,0,0,0.29);
+  background-color: rgba(0,0,0,0.15);
 }
 
 ul#mobile-navigation {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #333;
 }
 
 .border-bottom-1 {
@@ -25,26 +20,15 @@ ul#mobile-navigation {
 }
 
 .heading {
-  border-bottom: 2px solid rgba(0,0,0,0.40);
+  border-bottom: 2px solid #1f1f1f;
 }
 
 .hover-effect:hover {
-  background-color: rgba(0,0,0,0.40)!important;
+  background-color: #1f1f1f !important;
 }
 
 .user-dropdown li.user-section:hover {
   background: #000;
-}
-
-.collection {
-  border: 1px solid rgba(0,0,0,0.40);
-  background-color: rgba(0,0,0,0.40);
-  color: #fff;
-}
-
-.collection .collection-item {
-  background: rgba(0,0,0,0.40);
-  border-color: rgba(0,0,0,0.40);
 }
 
 .collapsible {
@@ -52,26 +36,30 @@ ul#mobile-navigation {
 }
 
 .collapsible-header {
-  background: rgba(0,0,0,0.40);
-  color: #fff;
+  background: #333;
+  color: #e5e0d8;
   border-color: #555;
 }
 
 .select-wrapper span.caret, .navbar-fixed nav a {
-  color: #fff;
+  color: #e5e0d8;
 }
 
 nav .input-field label.active i {
-  color: #fff !important;
+  color: #e5e0d8 !important;
 }
 
 .input-field input[type="search"]:focus {
   background: #333;
-  color: #fff;
+  color: #cfc9bf;
 }
 
 .navbar-fixed nav a, nav .dropdown-content li:not(#view-all-notifications) a {
-  color: #fff;
+  color: #e5e0d8;
+}
+
+nav .brand-logo {
+    color: #cfc9bf;
 }
 
 .hover-effect {
@@ -83,17 +71,17 @@ nav .input-field label.active i {
 }
 
 .toast {
-  background-color: #222f3e !important;
-  color: #bbb !important;
+  background-color: #33333385 !important;
+  color: #cfc9bf !important;
   font-weight: 600;
 }
 
 .section .card, p.text, .notification-date, .message-date, .dropdown-title, .user-username, .optgroup span, .navigation .dropdown-content.user-dropdown li>a, .card .card-reveal .card-title {
-  color: #fff !important;
+  color: #e5e0d8 !important;
 }
 
 footer.grey.page-footer {
-  background-color: rgba(0,0,0,0.40) !important;
+  background-color: #333 !important;
 }
 
 footer .footer-copyright {
@@ -104,12 +92,18 @@ footer .footer-copyright {
   background-color: #555;
 }
 
+.collection {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #e5e0d8;
+}
+
 .collection a.collection-item:hover {
   background-color: #555 !important;
 }
 
 table.highlight tbody tr:hover {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #555;
 }
 
 p.subtitle {
@@ -117,15 +111,15 @@ p.subtitle {
 }
 
 ul.dropdown-content li:hover {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #444;
 }
 
 .dropdown-content li.active, .dropdown-content li.selected, .dropdown-content li.active.selected {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #444;
 }
 
 .divider {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #000;
 }
 
 .comment-info {
@@ -133,7 +127,7 @@ ul.dropdown-content li:hover {
 }
 
 .comment-info {
-  border-top: 1px solid rgba(0,0,0,0.40);
+  border-top: 1px solid #1f1f1f;
 }
 
 .user-email, .user-credits, .user-rank, .user-class {
@@ -141,7 +135,7 @@ ul.dropdown-content li:hover {
 }
 
 .card-blocks .card .card-content a.btn {
-  color: rgba(0,0,0,0.40) !important;
+  color: #000 !important;
 }
 
 .slider .indicators .indicator-item, .progress {
@@ -153,29 +147,29 @@ ul.dropdown-content li:hover {
 }
 
 .material-tooltip .backdrop {
-  background-color: #aaa;
+  background-color: #000;
 }
 
 .material-tooltip {
-  color: rgba(0,0,0,0.40);
+  color: #bdbdbd;
   font-weight: bold;
 }
 
 .menu-bar {
-  background-color: rgba(0,0,0,0.40);
-  border-right: 2px solid rgba(0,0,0,0.40);
+  background-color: #444;
+  border-right: 2px solid #555;
 }
 
 .menu-bar-list li.active .menu-bar-icon {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #545454;
 }
 
 .separator {
-  background-color: rgba(0,0,0,0.40);
+  background-color: #444;
 }
 
 .leaderboard-overview-card .individual-scores-container {
-  border-left: 1px solid rgba(0,0,0,0.40);
+  border-left: 1px solid #444;
 }
 
 .xp-score-container .percentile {
@@ -187,11 +181,11 @@ ul.dropdown-content li:hover {
 }
 
 .xp-score-container .percentile p {
-  color: rgba(0,0,0,0.40);
+  color: #333;
 }
 
 .toast a {
-  color: rgba(0,0,0,0.40) !important;
+  color: #000 !important;
 }
 
 ::-webkit-scrollbar, *::-webkit-scrollbar {
@@ -199,9 +193,9 @@ ul.dropdown-content li:hover {
 }
 
 ::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.40);
+  background: #222;
 }
 
 ::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.40);
+  background: #444;
 }

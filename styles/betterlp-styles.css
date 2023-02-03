@@ -16,11 +16,67 @@ main:not(#home-guest) {
   max-width: 1100px;
 }
 
+body {
+  color: #cfc9bf;
+}
+
+.navigation, .modal, .dropdown-content, .card, .tabs, .user-dropdown li.user-section:hover, .card .card-reveal {
+  background-color: rgba(0,0,0,0.40);
+}
+
+.navigation li:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.navigation li.active {
+  background-color: rgba(0,0,0,0.29);
+}
+
+ul#mobile-navigation {
+  background-color: rgba(0,0,0,0.40);
+}
+
+.collection {
+  border: 1px solid rgba(0,0,0,0.40);
+  background-color: rgba(0,0,0,0.40);
+  color: #e5e0d8;
+}
+
+.collection .collection-item {
+  background: rgba(0,0,0,0.40);
+  border-color: rgb(0 0 0 / 0%);
+}
+
+.white {
+    background-color: #00000052 !important;
+}
+
 .site-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   position: relative;
+}
+
+.select-wrapper span.caret, .navbar-fixed nav a {
+  color: #e5e0d8;
+}
+
+.section .card, p.text, .notification-date, .message-date, .dropdown-title, .user-username, .optgroup span, .navigation .dropdown-content.user-dropdown li>a, .card .card-reveal .card-title {
+  color: #e5e0d8 !important;
+}
+
+nav .input-field label.active i {
+  color: #e5e0d8 !important;
+}
+
+.input-field input[type="search"]:focus {
+  background: #333;
+  color: #cfc9bf;
+}
+
+.navbar-fixed nav a, nav .dropdown-content li:not(#view-all-notifications) a {
+  color: #e5e0d8;
 }
 
 /* Buttons */
@@ -43,43 +99,18 @@ main:not(#home-guest) {
   margin-top: 7px;
 }
 
+.navbar-fixed nav {
+  border-bottom: 5px solid #00b0ff00;
+}
+
 .navigation  {
   height: 0px;
   font-size: 0.0em;
 }
 
-.profile-header {
-  height: 3px;
-  width: 1090px;
-  font-size: 0.65em;
-  border-radius: 6px;
-  margin-left: auto;
-}
-
 .primary-content {
   float: right;
 }
-
-.actions-section {
-  
-}
-
-.right {
-    float: left !important;
-}
-
-
-.margin-top-10 {
-  background-image: url("https://www.levelpalace.com/files/56e124f524b14273baf82536410daf98.png") !important;
-} 
-
-.recent-levels {
-  display: none;
-} 
-
-.page-footer {
-  display: none;
-} 
 
 .user-dropdown {
   font-size: 1.0em;
@@ -98,8 +129,31 @@ p.brand-logo {
   padding-left: 5px;
 }
 
+.material-tooltip .backdrop {
+  background-color: #000;
+}
+
+.material-tooltip {
+  color: #bdbdbd;
+  font-weight: bold;
+}
+
 p.brand-logo.truncate {
     max-width: 100%;
+}
+
+.toast {
+  background-color: #33333385 !important;
+  color: #cfc9bf !important;
+  font-weight: 600;
+}
+
+table.bordered>thead>tr,table.bordered>tbody>tr {
+    border-bottom: 1px solid #d0d0d000
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: #f2f2f200
 }
 
 .options-dropdown {
@@ -113,6 +167,10 @@ p.brand-logo.truncate {
 
 nav .button-collapse i {
   padding-left: 15px;
+}
+
+nav .brand-logo {
+    color: #cfc9bf;
 }
 
 /* Cards */
@@ -162,10 +220,6 @@ nav .button-collapse i {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   overflow-y: hidden;
-}
-
-.lean-overlay {
-  z-index: 5001 !important;
 }
 
 /* Collections */
@@ -267,6 +321,7 @@ p.large-title, p.medium-title, p.subtitle {
 
 /* Collapsibles */
 .collapsible {
+  color: #e5e0d8;
   margin: 0;
 }
 
@@ -1052,25 +1107,6 @@ Page: Profile
   padding: 0px 25px 25px 2px;
 }
 
-.profile-user-icon {
-  position: absolute;
-  width: 170px;
-  bottom: -157px;
-  left: 22px;
-  z-index: 200;
-}
-
-.profile-header .card-image {
-  width: 100%;
-  max-height: 250px;
-  min-height: 150px;
-}
-
-.profile-header .card-content {
-  margin-top: -49px;
-  padding-bottom: 0px;
-}
-
 .profile-header .card-content .subtitle {
   margin-top: -27px;
 }
@@ -1084,18 +1120,7 @@ Page: Profile
 }
 
 .profile-user-media {
-  position: absolute;
-  z-index: 200;
-  bottom: 91px;
-  right: 0px;
   background: rgba(0, 0, 0, 0.7);
-  border-top-left-radius: 25px;
-}
-
-.profile-user-media .user-media-icon {
-  float: left;
-  width: 60px;
-  padding: 10px;
 }
 
 .profile-user-media .user-media-icon img {
