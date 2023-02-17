@@ -14,7 +14,7 @@
       return storedTheme
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark'
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark'
   }
 
   const setTheme = function (theme) {
@@ -41,7 +41,7 @@
   }
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (storedTheme !== 'light' || storedTheme !== 'dark') {
+    if (storedTheme !== 'dark') {
       setTheme(getPreferredTheme())
     }
   })
