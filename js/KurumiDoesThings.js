@@ -264,7 +264,7 @@ $(document).ready(function() {
   });
   
 onClick(".send-link", function() {
-    console.log("Starting up!");
+    console.log("Starting up!!");
 	var WXP = "<div id='xp'><table><tbody><tr><td><iframe id='XPVM' src='https://softendo.github.io/dragooniaxp/index.html' width='821' height='604'></iframe></td></tr></tbody></table></div>";
 	$(".profile-banner").append(WXP);
   });  
