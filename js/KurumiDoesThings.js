@@ -7,23 +7,12 @@ $(document).ready(function() {
   var url = $(location).attr("href");
   var loadInProgress = false;
    toast("Konnichiwa stranger!");
-   console.log("SoftendoStudios v3.0.1"); 
+   console.log("SoftendoStudios v3.0.6"); 
    var Infot = "<div class='section profile-show-4 kurumi-info'><nav><div class='nav-wrapper'><p class='brand-logo'>Random Senko Section</p></div></nav><div class='card'><div class='card-content'><div class='row'><ul class='collection scrollable small-scrollable' id='kurumi-random'><img src='https://steamuserimages-a.akamaihd.net/ugc/782979477407175069/D93AD3F1DE41CCC1C736D619D03D87C9759E0394/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false' width='285'></ul></div></div></div></div>";
    $(".actions-section").append(Infot);
    var ProfMedia = "<div class='section profile-show-5 kurumi-media'><nav><div class='nav-wrapper'><p class='brand-logo'>Profile Music</p></div></nav><div class='card'><div class='card-content'><div class='row'><ul class='collection scrollable small-scrollable' id='kurumi-media'><iframe src='https://www.youtube-nocookie.com/embed/videoseries?list=PL2RKSt6QUyBAS5TiQPDlE4ls_t6f01syl&amp;autoplay=1' title='YouTube video player' frameborder='0' allowfullscreen=''></iframe></ul></div></div></div></div>";
-   $(".actions-section").append(ProfMedia);
-   var Smth = "<a class='blue-shell'><u>Click to blue shell this user.</u></a>";
-   $(".comment-info").append(Smth);
-   var dragoonianame = "<p><a href='profile?user_id=7561'>DragooniaShade</a></p>";
-   $("h4.card-title.truncate").text("");
-   $("h4.card-title.truncate").append(dragoonianame);
-   $("img.tooltipped").attr("data-tooltip", "Kingdom of Dragoonialand");
-   $("img.tooltipped").attr("src", "https://cdn.discordapp.com/attachments/1042892196896047176/1064650575179944017/DragooniaFlag.png");
-   $("div.col.s1.center-align").eq(0).find("h4.card-title").text("77");
-   $("img.responsive-img").eq(3).attr("src", "images/achievements/45.png");
-   $("p.achievement-description").eq(3).text("Be a member for a certain number of days. This achievement is broken.");
-   var POGAchievement = "<div class='collection-item achievement row valign-wrapper'> <div class='col s2 no-padding achievement-image valign'> <img src='https://cdn.discordapp.com/attachments/1042892196896047176/1065072273985380573/greatbadge.png' class='responsive-img'> </div><div class='col s6 achievement-info valign'> <p class='achievement-title text mega-title'>Useless Achievement</p><p class='achievement-description text text-wrap medium-title'>Rate one level.</p></div><div class='col s4 achievement-progress no-padding valign'> <div class='progress-wrapper no-padding'> <p class='progress-subtitle text'>1/1</p><div class='progress'> <div class='determinate' style='width: 100%'></div></div><p class='progress-reward medium-title text align-center'>Reward: 0XP</p></div></div></div>";
-   $(".achievements").append(POGAchievement);
+   $("a.button-collapse").addClass("buttonMenu");
+   $("a.button-collapse").removeClass("button-collapse");
 
   /****************
   GENERAL FUNCTIONS
@@ -218,7 +207,7 @@ $(document).ready(function() {
   });
   
   // Mobile Menu
-  $(".button-collapse").sideNav();
+  $(".buttonMenu").sideNav();
   
   // Tabs
   $('ul.tabs').tabs();
@@ -274,174 +263,25 @@ $(document).ready(function() {
     });
   });
   
-  // Textarea Editor
-   tinymce.init({
-        selector: ".tinymce-textarea"
-    });
-    
-    tinymce.init({
-        selector: ".tinymce-textarea-dark"
-    });
-  
-  
-//   tinymce.init({
-//     selector: '.tinymce-textarea',
-//     menubar: 'file edit insert view format table tools',
-//     plugins: 'autolink lists link image charmap preview hr pagebreak autosave nonbreaking template searchreplace visualblocks visualchars code codesample fullscreen insertdatetime media nonbreaking save table contextmenu emoticons paste textcolor colorpicker textpattern imagetools',
-//     fontsize_formats: '8pt 10pt 12pt 14pt 18pt 24pt 36pt',
-//     toolbar1: 'insertfile undo redo | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent restore',
-//     toolbar2: 'preview | link image media codesample |  fontsizeselect forecolor backcolor emoticons',
-//     contextmenu: 'inserttable cell row column deletetable | fullscreen preview code',
-//     removed_menuitems: 'newdocument',
-//     image_advtab: true,
-//     // content_css: ['css/styles.css', 'css/materialize.css'],
-//     min_height: 400,
-//     autosave_interval: '15s',
-//     autosave_restore_when_empty: false,
-//     autosave_ask_before_unload: false,
-//     autosave_retention: '43200m',
-//     nonbreaking_force_tab: true,
-//     browser_spellcheck: true,
-//     templates: [
-//       {title: 'Template #1', description: 'This is a test template!', content: 'My content'},
-//       {title: 'Template #2', description: 'This is a test template!', content: 'My content 2'}
-//     ],
-//     invalid_styles: 'position display'
-//   });
-  
-//   tinymce.init({
-//     selector: '.tinymce-textarea-dark',
-//     skin_url: 'css/tinymce-dark',
-//     menubar: 'file edit insert view format table tools',
-//     plugins: 'autolink lists link image charmap preview hr pagebreak autosave nonbreaking template searchreplace visualblocks visualchars code codesample fullscreen insertdatetime media nonbreaking save table contextmenu emoticons paste textcolor colorpicker textpattern imagetools',
-//     fontsize_formats: '8pt 10pt 12pt 14pt 18pt 24pt 36pt',
-//     toolbar1: 'insertfile undo redo | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent restore',
-//     toolbar2: 'preview | link image media codesample |  fontsizeselect forecolor backcolor emoticons',
-//     contextmenu: 'inserttable cell row column deletetable | fullscreen preview code',
-//     removed_menuitems: 'newdocument',
-//     image_advtab: true,
-//     // content_css: ['css/styles.css', 'css/materialize.css'],
-//     min_height: 400,
-//     autosave_interval: '15s',
-//     autosave_restore_when_empty: false,
-//     autosave_ask_before_unload: false,
-//     autosave_retention: '43200m',
-//     nonbreaking_force_tab: true,
-//     browser_spellcheck: true,
-//     invalid_styles: 'position display'
-//   });
-  
 onClick(".send-link", function() {
     console.log("Starting up!");
 	var WXP = "<div id='xp'><table><tbody><tr><td><iframe id='XPVM' src='https://softendo.github.io/dragooniaxp/index.html' width='821' height='604'></iframe></td></tr></tbody></table></div>";
 	$(".profile-banner").append(WXP);
   });  
   
-onClick(".profile-banner", function() {
-    console.log("bruh");
-    var audio = new Audio('https://cdn.discordapp.com/attachments/1042892196896047176/1060362135462490272/bruh.mp3');
-    audio.play();
+onClick(".tvbtn", function() {
+	$(".primary-content").text("");
+	$(".notif-section").remove();
+    $(".primary-content").append("<div class='section notif-section'><div class='card'> <div class='card-content'> <div class='row'><iframe id='lpframe' src='https://softendo.github.io/tv' height='560' width='100%' allowfullscreen=''></iframe></div></div></div></div></div></div></div>");
   });
   
-onClick(".brand-logo", function() {
-    toast("This profile uses the 'Kurumi Profile Enhancement System'.");
+onClick(".osbtn", function() {
+	$(".primary-content").text("");
+	$(".notif-section").remove();
+    $(".modals").append("<div class='section notif-section'><div class='card'> <div class='card-content'> <div class='row'><iframe id='lpframe' src='https://archive.org/details/softendoos-1.1' height='480' width='100%' allowfullscreen=''></iframe></div></div></div></div></div></div></div>");
   });
   
- onClick(".blue-shell", function() {
-    console.log("Yes.");
-	toast("Did you expect something to happen clicking on that button? Well too bad.");
+ onClick(".close-gw", function() {
+    $("#window").remove();
   });
-
-    
-/********** PAINT TEASER *********/
-if (document.getElementById('paint')) {
-  
-  console.log("Hi");
-    
-var width = 100,
-height = document.getElementsByTagName('body')[0].clientHeight - 20,
-c = document.getElementById('paint'),
-ctx = c.getContext('2d');
-c.width = width;
-c.height = height;
-    
-var paint = [];
-var colors = ["#3e474f", "#00BCF0", "#F8CD46", "#88CA5E", "#BE8252", "#AF343A"];
-
-var totalPaints = 6;
-var size = 4;
-
-function initPaint(){
-//    for (var i = 0; i < totalPaints; i++){
-//        addPaint();
-//    }
-    // Add first paint
-    addPaint(colors[0]);
-    setTimeout(() => { addPaint(colors[1]) }, 1000);
-    setTimeout(() => { addPaint(colors[2]) }, 2700);
-    setTimeout(() => { addPaint(colors[3]) }, 3500);
-    setTimeout(() => { addPaint(colors[4]) }, 3900);
-    setTimeout(() => { addPaint(colors[1]) }, 6000);
-    setTimeout(() => { addPaint(colors[5]) }, 6700);
-    
-    setInterval( update, 40 );
-}
-
-function drawPaint(x,y,size, colour) {
-    ctx.beginPath();
-    ctx.arc(x, y, size ,0 , Math.PI*2, true);
-    ctx.closePath();
-	ctx.fillStyle=colour;
-	ctx.fill();
-}
-
-function update(){
-    for (var i = 0; i < paint.length; i++){
-        paint[i].y = paint[i].y + paint[i].v;
-//        if (paint[i].y > height + 60){
-//            paint.splice(i,1);
-//            addPaint();
-//        }
-        drawPaint(paint[i].x, paint[i].y, paint[i].s, paint[i].c);
-    }
-}
-
-function addPaint(color){
-    //Try 50 times
-    var i = 50;
-    while(i > 0){
-        size = Math.random() * size + 2;
-        x = Math.random() * width;
-
-        found = false;
-
-        //Dont Allow drips ontop of each other (Overtaking drops destroy the prettyness)
-        for (var j = 0; j < paint.length; j++){
-            if ((x + size > paint[j].x) && (x - size < paint[j].x + paint[j].s)){
-                found = true;
-                break;
-            }
-
-            if ((x - size < paint[j].x) && (x + size > paint[j].x - paint[j].s)){
-                found = true;
-                break;
-            }
-        }
-
-        if (found === false){
-            paint.push({s:size,
-                       x:x,
-                       y:-60,
-                       v:(Math.random() * 1.5) + 0.5,
-                       c:color});
-			i--;
-            return;
-        }
-    }
-}
-
-initPaint();
-    
-}
-  
 });
