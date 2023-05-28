@@ -281,6 +281,12 @@ onClick(".osbtn", function() {
     $(".modals").append("<div class='section notif-section'><div class='card'> <div class='card-content'> <div class='row'><iframe id='lpframe' src='https://archive.org/details/softendoos-1.1' height='480' width='100%' allowfullscreen=''></iframe></div></div></div></div></div></div></div>");
   });
   
+onClick(".smfbtn", function() {
+	$(".primary-content").text("");
+	$(".notif-section").remove();
+    $(".modals").append("<div class='section notif-section'><div class='card'> <div class='card-content'> <div class='row'><iframe id='lpframe' src='https://softendo.github.io/marioflash/index.html' height='490' width='100%' allowfullscreen=''></iframe></div></div></div></div></div></div></div>");
+  });
+  
  onClick(".close-gw", function() {
     $("#window").remove();
   });
