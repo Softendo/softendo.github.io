@@ -6,6 +6,25 @@
 body {
   background-color: #000000;
 }
+::-webkit-scrollbar, *::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
+  background: rgba(9,9,9,0.40);
+}
+
+::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+  background: rgba(9,9,9,0.40);
+}
+
+p {
+  color: #777777;
+}
+
+a {
+  color: #888888;
+}
 </style>
 <link rel="shortcut icon" href="https://softendo.github.io/tv/favicon.png">
 <meta charset="UTF-8">
@@ -17,14 +36,43 @@ body {
   <meta name="distribution" content="Global"/>
 </head>
 <body>
+<script type="text/javascript" src="https://softendo.github.io/js/jquery.js"></script>
+ <script type="text/javascript">
+    function onClick(element, func) {
+    $(document).off("click", element);
+    $(document).on("click", element, func);
+  }
+onClick(".main", function() {
+	var WXP = "<div class='embed-container'><iframe  src='https://www.youtube-nocookie.com/embed/RmmcXzRlEKg' title='Player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen=''></iframe></div>";
+	$(".embed-container").append(WXP);
+  });  
+onClick(".onboard1", function() {
+	var WXP1 = "<div class='embed-container'><iframe src='https://player.twitch.tv/?channel=MatheusXDragonBR&parent=softendo.github.io' frameborder='0' allowfullscreen='true' scrolling='no'></iframe></div>";
+	$(".embed-container").append(WXP1);
+  });  
+onClick(".onboard2", function() {
+	var WXP2 = "<div class='embed-container'><iframe src='https://player.twitch.tv/?channel=papaidofps&parent=softendo.github.io' frameborder='0' allowfullscreen='true' scrolling='no'></iframe></div>";
+	$(".embed-container").append(WXP2);
+  });  
+onClick(".onboard3", function() {
+	var WXP3 = "<div class='embed-container'><iframe src='https://player.twitch.tv/?channel=vitorbruning&parent=softendo.github.io' frameborder='0' allowfullscreen='true' scrolling='no'></iframe></div>";
+	$(".embed-container").append(WXP3);
+  });  
+onClick(".onboard4", function() {
+	var WXP4 = "<div class='embed-container'><iframe src='https://player.twitch.tv/?channel=gustavo_1563&parent=softendo.github.io' frameborder='0' allowfullscreen='true' scrolling='no'></iframe></div>";
+	$(".embed-container").append(WXP4);
+  });  
+onClick(".onboard5", function() {
+	var WXP5 = "<div class='embed-container'><iframe src='https://player.twitch.tv/?channel=Acceler_23&parent=softendo.github.io' frameborder='0' allowfullscreen='true' scrolling='no'></iframe></div>";
+	$(".embed-container").append(WXP5);
+  }); 
+    </script>
 </div>
-<a href="https://softendo.github.io/tv/index" class="brand-logo left"><img src="https://softendo.github.io/tv/logo.png" class="logo-image" alt="logo"></a>
-
+<div align="left"><a href="https://softendo.github.io/tv/index" class="brand-logo left"><img src="https://softendo.github.io/tv/logo.png" class="logo-image" alt="logo"></a>
+<p>Câmeras onboard:</p><a class="onboard1">1</a>|<a class="onboard2">2</a>|<a class="onboard3">3</a>|<a class="onboard4">4</a>|<a class="onboard5">5</a>|<a class="main">Principal</a></div>
 
 <div align="center">
 <style>.embed-container { position: relative; padding-bottom: 40.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container"><iframe  src="https://www.youtube-nocookie.com/embed/p2t3LGEDlL0" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</div>
-
+<div class="embed-container"><iframe  src="https://www.youtube-nocookie.com/embed/RmmcXzRlEKg" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </body>
 </html>
