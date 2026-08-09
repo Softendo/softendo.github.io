@@ -5902,7 +5902,7 @@ b.Jp = function (b) {
   g.I.push(k);
   var l = new Lb({
     iceServers: n.Vf,
-    ij: 'https://softendo.github.io/hb/data/host.json',
+    ij: 'https://www.haxball.com/rs/api/host.json',
 	//ij: "data/host.json",
     state: g,
     version: 9
@@ -10715,7 +10715,7 @@ $a.b = !0;
 $a.prototype = {
 Il: function () {
 var a = this;
-M.tk(/*n.Ee + 'api/notice'*/"https://softendo.github.io/hb/data/notice.json").then(function (b) {
+M.tk(/*n.Ee + 'api/notice'*/"https://www.haxball.com/rs/api/notice.json").then(function (b) {
 var c = b.content;
 null != c && '' != c && $a.On != c && (a.$n.innerHTML = c, a.Xk.hidden = !1, a.nd.onclick = function () {
 $a.On = c;
