@@ -6339,7 +6339,7 @@ isFinite(f.Le) || (f.Le = 22000)
 }
 };
 va.get = function () {
-return M.L(/*n.Ee + */'https://softendo.github.io/hb/data/list', 'arraybuffer').then(function (a) {
+return M.L(/*n.Ee + */'https://www.haxball.com/rs/api/list', 'arraybuffer').then(function (a) {
 return va.parse(new F(new DataView(a), !1))
 })
 };
