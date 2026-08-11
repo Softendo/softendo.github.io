@@ -190,6 +190,9 @@ function playersToFollowList() {
 		//console.log(ctx.canvas.width, ctx.canvas.height);
 		ctx.fillStyle = '#303030';
 		ctx.fillRect(0, 0, 10, 10);
+			gif.setRepeat(0); //0  -> loop forever
+                        //1+ -> loop n times then stop
+    gif.setDelay(500); //go to next frame every n milliseconds
 		gif.start();
 		gif.addFrame(canv, {delay: 200});
 
