@@ -14,33 +14,34 @@ console.log('Haxball Media Player is now running');
 
 var kanwasy = [], pozycje, paintedCanvases = [];
 var gifContainer = document.createElement('a');
-  function createGif() {
-	
-	var canv = document.createElement('canvas');
-	var ctx = canv.getContext('2d');
-	ctx.canvas.width = 2000, ctx.canvas.height = 2000;
-	console.log(ctx.canvas.width, ctx.canvas.height);
-	var encoder = new GIFEncoder();
-	encoder.setRepeat(0); //0  -> loop forever
+function createGif() {
+
+  var canv = document.createElement('canvas');
+  var ctx = canv.getContext('2d');
+  ctx.canvas.width = 2000, ctx.canvas.height = 2000;
+  //console.log(ctx.canvas.width, ctx.canvas.height);
+  /*var encoder = new GIFEncoder();
+  encoder.setRepeat(0); //0  -> loop forever
                         //1+ -> loop n times then stop
     encoder.setDelay(500); //go to next frame every n milliseconds
-	encoder.start();
-	
-	for (var i=3000; i<3003; i++) {
-		ctx.fillStyle = '#303030';
-		ctx.fillRect(0, 0, 2000, 2000);
-		ctx.fillStyle = 'blue';
-		//console.log(Math.abs(pozycje[0][1][i].x),Math.abs(pozycje[0][1][i].y));
-		ctx.beginPath();
-		ctx.fill();
-		paintedCanvases.push(canv.toDataURL());
-		encoder.addFrame(ctx);
-	}
-	gifalizer();
-	encoder.finish();
-    encoder.download("download.gif");
-	
+  encoder.start();*/
+
+  for (var i = 3000; i < 3003; i++) {
+    ctx.fillStyle = '#303030';
+    ctx.fillRect(0, 0, 2000, 2000);
+    ctx.fillStyle = 'blue';
+    //console.log(Math.abs(pozycje[0][1][i].x),Math.abs(pozycje[0][1][i].y));
+    ctx.beginPath();
+    ctx.arc(Math.abs(pozycje[0][1][i].x), Math.abs(pozycje[0][1][i].y), 15, 0, 2 * Math.PI);
+    ctx.fill();
+    paintedCanvases.push(canv.toDataURL());
+    //encoder.addFrame(ctx);
   }
+  gifalizer();
+  //encoder.finish();
+  //encoder.download("download.gif");
+
+}
   
   
 function gifalizer() {
