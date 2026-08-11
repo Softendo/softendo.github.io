@@ -190,7 +190,7 @@ function playersToFollowList() {
 		//console.log(ctx.canvas.width, ctx.canvas.height);
 		ctx.fillStyle = '#303030';
 		ctx.fillRect(0, 0, 10, 10);
-		
+		gif.start();
 		gif.addFrame(canv, {delay: 200});
 
 		gif.on('finished', function(blob) {
