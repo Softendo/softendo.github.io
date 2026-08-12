@@ -30,9 +30,9 @@ function createGif() {
     ctx.fillStyle = '#303030';
     ctx.fillRect(0, 0, 2000, 2000);
     ctx.fillStyle = 'blue';
-    console.log(Math.abs(pozycje[0][1][i].x),Math.abs(pozycje[0][1][i].y));
+    console.log(Math.abs(pozycje[0][1].x),Math.abs(pozycje[0][1].y));
     ctx.beginPath();
-    ctx.arc(Math.abs(pozycje[0][1][i].x), Math.abs(pozycje[0][1][i].y), 15, 0, 2 * Math.PI);
+    ctx.arc(Math.abs(pozycje[0][1].x), Math.abs(pozycje[0][1].y), 15, 0, 2 * Math.PI);
     ctx.fill();
     paintedCanvases.push(canv.toDataURL());
     encoder.addFrame(ctx);
