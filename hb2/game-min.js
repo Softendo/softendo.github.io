@@ -19,7 +19,7 @@ function createGif() {
   var canv = document.createElement('canvas');
   var ctx = canv.getContext('2d');
   ctx.canvas.width = 2000, ctx.canvas.height = 2000;
-  //console.log(ctx.canvas.width, ctx.canvas.height);
+  console.log(ctx.canvas.width, ctx.canvas.height);
  var encoder = new GIFEncoder();
   encoder.setRepeat(0); //0  -> loop forever
                         //1+ -> loop n times then stop
@@ -180,7 +180,8 @@ function playersToFollowList() {
       aa.N = '<div class=\'dialog settings-view\'><h1>GIF Creator</h1><button data-hook=\'close\'>Close</button><div data-hook=\'presskey\' tabindex=\'-1\'><div>Press a key</div></div><div class=\'tabcontents\'><div class=\'section\' data-hook=\'miscsec\'><div class=\'loc\' data-hook=\'loc\'></div><div class=\'loc\' data-hook=\'loc-ovr\'></div><button data-hook=\'loc-ovr-btn\'></button></div><div>Viewport Mode:  <input name="sometext"></div><div class=\'section\' data-hook=\'soundsec\'><div data-hook="tsound-main">Moments:<input name="sometext"></div><div data-hook="tsound-chat">Chat sound enabled</div><div data-hook="tsound-highlight">Nick highlight sound enabled</div><div data-hook="tsound-crowd">Crowd sound enabled</div></div><div class=\'section\' data-hook=\'inputsec\'></div><div class=\'section\' data-hook=\'videosec\'><div>Viewport Mode:<select data-hook=\'viewmode\'><option>Dynamic</option><option>Restricted 840x410</option><option>Full 1x Zoom</option><option>Full 1.25x Zoom</option><option>Full 1.5x Zoom</option><option>Full 1.75x Zoom</option><option>Full 2x Zoom</option><option>Full 2.25x Zoom</option><option>Full 2.5x Zoom</option></select></div><div>FPS Limit:<select data-hook=\'fps\'><option>None (Recommended)</option><option>30</option></select></div><div>Resolution Scaling:<select data-hook=\'resscale\'><option>100%</option><option>75%</option><option>50%</option><option>25%</option></select></div><div data-hook="tvideo-teamcol">Custom team colors enabled</div><div data-hook="tvideo-showindicators">Show chat indicators</div><div data-hook="tvideo-showavatars">Show player avatars</div></div></div><div class=\'tabs\'><button data-hook=\'soundbtn\'>Sound</button><button data-hook=\'videobtn\'>Video</button><button data-hook=\'inputbtn\'>Input</button><button style=\'display:none\' data-hook=\'miscbtn\'>Misc</button><button onclick=\'createGif()\' id=\'button_create_gif\'>Create GIF</button></div></div>';
       document.getElementById('button_gif').style.display = 'block';
 		
-		var gif = new GIFEncoder({
+		/*
+		var gif = new GIF({
 		  workers: 2,
 		  quality: 10
 		});
@@ -191,9 +192,7 @@ function playersToFollowList() {
 		//console.log(ctx.canvas.width, ctx.canvas.height);
 		ctx.fillStyle = '#303030';
 		ctx.fillRect(0, 0, 10, 10);
-			gif.setRepeat(0); //0  -> loop forever
-                        //1+ -> loop n times then stop
-    gif.setDelay(500); //go to next frame every n milliseconds
+		
 		gif.addFrame(canv, {delay: 200});
 
 		gif.on('finished', function(blob) {
@@ -206,6 +205,7 @@ function playersToFollowList() {
 		});
 
 		gif.render();
+		*/
 		
 	}
   }
