@@ -20,11 +20,11 @@ function createGif() {
   var ctx = canv.getContext('2d');
   ctx.canvas.width = 2000, ctx.canvas.height = 2000;
   //console.log(ctx.canvas.width, ctx.canvas.height);
-  /*var encoder = new GIFEncoder();
+ var encoder = new GIFEncoder();
   encoder.setRepeat(0); //0  -> loop forever
                         //1+ -> loop n times then stop
     encoder.setDelay(500); //go to next frame every n milliseconds
-  encoder.start();*/
+  encoder.start();
 
   for (var i = 3000; i < 3003; i++) {
     ctx.fillStyle = '#303030';
