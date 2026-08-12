@@ -37,9 +37,8 @@ function createGif() {
     paintedCanvases.push(canv.toDataURL());
     encoder.addFrame(ctx);
   }
-  gifalizer();
-  //encoder.finish();
-  //encoder.download("download.gif");
+  encoder.finish();
+  encoder.download("download.gif");
 
 }
   
